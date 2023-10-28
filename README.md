@@ -5,3 +5,6 @@ This is the ultimate notes for computer science student
 >no matter what just do it every thing fine after doing just keep going.
 # here you you must Know 
 > project give you power to explain you self .
+
+# its  second time
+> let say i did it 
