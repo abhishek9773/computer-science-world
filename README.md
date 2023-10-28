@@ -8,3 +8,11 @@ This is the ultimate notes for computer science student
 
 # its  second time
 > let say i did it 
+
+**TODO** :  to do thei screae 
+
+*Italic sentene*
+
+- list
+    - do it
+        - again do
