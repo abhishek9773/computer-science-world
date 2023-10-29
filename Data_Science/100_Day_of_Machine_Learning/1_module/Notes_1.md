@@ -162,4 +162,47 @@
 </tr>
 </table>
 
-# we have many job role profle for knowlage
+## we have many job role profle for knowlage
+
+# Day = 11
+### what are Tensors?
+### 0D Tenosr/ Scalar
+> 3 or 2 etc  
+
+> 0 dimention
+```python
+import nmpy as np
+a = np.array(4)
+a.ndim
+
+```
+### 1D Tansor/Vector
+> [1,2, 3, 4] 
+
+> you can this is one dim tensor or vecor, 1D array
+
+# Day = 14
+### i. Business Problem to ML Problem
+### ii. Type of Problem
+### iii. Current Solution
+### iv. Getting Data
+### v. Metrics to Measure
+### vi. online Vs Batch?
+### vii . Check Assumptions
+
+# Day = 16
+## Gethering Data 
+- There are many way to gether data 
+### 1. CSV
+### 2. JSON / SQL
+### 3. fetch API
+### 4. WebScripting
+### 5. google bigquary, make datawhereHouse , noSql datafatching ect technique.
+
+## Day = 17
+### what is the API?
+- API are responsible for comunicating between two software 
+- API is noting but **data pipeline**.
+
+
+
