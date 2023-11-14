@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amaranth:ital@1&family=Playpen+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sytle.css"/>
+  </head>
+  <body>
+    <!--head area for notes-->
+    <div class="container">
+      <div class="head">
+        <div class="head_inner">
+          <h1>Hibernate Notes</h1>
+        </div>
+      </div>
+    </div>
+    <!--natigation bar-->
+    <div class="navigation">
+      <div class="navigation-1">
+       <li>Nevigation</li>
+       
+      
+      </div>
+
+    </div>
+    <!-- main content area.-->
+    <div class="contnet_area">
+      <div class="inner_content_area">
+        <p>
+          <dl>
+            <dt>4. Hibernate Code Generation Tools:</dt>
+            <dd>a. Schema Update</dd>
+            <dd>b. Schema Export</dd>
+            <dd>c. Code Geneartion</dd>
+           <dt>5. Hibernate Primary Key generation Algorithums.
+           </dt> 
+           <dt>6. Hibernate Connectio Polling Mechanisms</dt>
+           <dd>Inbilt connection Pooling Mechansm</dd>
+           <dd>- Thrid Party vendors providced Connecton Pooling Mechanisms DBCP, Proxool, C3P0</dd>
+           <dd>- Web Logic Server provided Conneciton pooling through JNDI server.</dd>
+           <dt>7. Hibernate transection Management:</dt>
+           <dd>- ACID properties</dd>
+           <dd>Automicity => Non-auto-Commit</dd>
+           <dd>Isolation Level</dd>
+           <dt>8. HQL[Hibernate Query Language]</dt>
+              <dd>From Employee; ==> select * from empl</dd>
+            <dt>9. Native SQL</dt>
+            <dt>10. Criterion API</dt>
+            <dt>11.Hibernate mappings</dt>
+              <dd>a. Baise or Mapping</dd>
+              <dd>b. Cponent Mapping</dd>
+              <dd>c. Inheritance Mapping</dd>
+              <dd> d. Associations Mapping</dd>
+            <dt>12. Hibernate Filters</dt>
+            <dt>13.Cache Mechanisms</dt>
+              <dd>I-cache</dd>
+              <dd>II-Cache</dd>
+            <dt>14. Hibernate5.x Features</dt>
+           <dt>15. JPA Basics</dt> 
+           <p><b>IDE: Eclipese IDE, NetBenas IDE<br>
+          DataBase: Oracle, Mysql<br>
+          <dl>
+            <dt>sring</dt>
+           <dt>Web Service</dt> 
+           <dt> Real Time Tools[MVEN, LOG4j]
+            <dt>Design Pattern</dt>
+           </dt>
+          </dl>
+        </b></p>
+          </dl>
+        </p>
+        <hr/>
+        <h3><a href="#">Leacture 2</a></h3>
+        <div class="Leacture2">
+          <p><b>Introduction:</b> <br>
+          => Enterprise : it is a business organization or Collection o fOrganizations running a single Label.<br>
+        <ins><b>Enterprise Application:</b></ins> : it is a software applicaton designed for an enterprise to simplify the internal Busiiness processing.<br>
+        -To prepare enterprise applications, we hae to provide the follwowing three layes.</p>
+        <talbe border='1'>
+          <tr><td><b><span>Presentation Layer or User interface Layer</span></b>
+            <ol>
+              <li>To Imporve Look and Feel to the Enterprise Application</li>
+              <li>It is staring point to the applicaiton inorder to access.</li>
+              <li>To take data form users and to submit user and to submit data to app</li>
+              <li>To perform Client side Data vailidataions with Java java Scirpt functions.</li>
+              <li>To submit different types of request from client to Server Ex: POST , GET, HEAD,....</li>
+              <li> Presentation Logic</li>
+              <li>AWT, SWING, HTML, JSP, Free Marker, Valocity,....</li>
+            </ol>
+          </td>
+          <td><br><span><b> Business processing Layer or Business Layer</b></span>
+          <ol>
+            <li>It is heart of the enerprise aplicatons. 
+            </li>
+            <li>To define and excute the business rules and regulations which are req by  the clients exactly</li>
+            <li>Business Logic</li>
+            <li>Servlet, JSP [Rarely], EJBs-Session Benas... </li>
+          </ol></td>
+          <td><br><span> Data Layer or Data Storage and Access or Presistence Layer</span>
+          <ol>
+            <li>To ineract with Database and to achieve Data Data presistency.</li>
+            <li>Persistence Logic</li>
+            <li>JDBC, EJBs-Entiry Benas , JPA, DAOs...</li>
+          </ol></td>
+        </tr>
+        
+        </talbe>
+
+        <p> Hibernate -----> Presistence Layer<br>
+        Struts, JSF ==> Presentation Leyer<br>
+      spring =========> All the Enterprise Application Layers.</p>
+
+      <h3>Data Persistency:</h3>
+      <p> Representing data premanently in back end systems is called as Data Persistency.<br>
+      Data Persistence Operations: To make data persistency if we perfrom operations with Back End System then that Operations are called as Data Persistence Operations Ex: CRUD
+      <br> c ===> Create / Inserting Data<br>
+    R ===> Read / Retrieve<br> U ===== Update<br> D ====> Data
+  <dl>
+    <dt>Data Persistence Tech: to achive Data persistency, If we use any tech then it is called as Data persistence Tech</dt>
+    <dd>EX: JDBC, Hibernate, JPA</dd>
+    <dt>In Enterprise applications, to perform data Persistency, we will use the following tech w.r.t JAVA</dt>
+    <dd>1. Serialization and Deserialization
+    <br> => The process of speraing data form an object and storing that data in aflat file is called Serialiation.<br>
+  => The process of Regeneraing an object on the baiss of data is called as Deserialization. <br>
+  => to perfrom Serrializa and Deserialization
+<br>
+1. ObjectOutStream => For Serialization<br>
+2. ObjectInputStream => For Deserialiatzation
+<br>FileOutputStream <br>FileOutputStream</dd>
+    
+    <p>=> the process o fspe</p>
+    <dd>2. JDBC</dd>
+    <dt>3. ORM 
+      <dd>a. EJBs Entity Benas
+      </dd>
+      <dd>b. Hibernate</dd>
+      <dd>c. JPA</dd>
+      <dd>d. Open JPA</dd>
+      <dd>e. Toplink</dd>
+      <dd>j. IBtis</dd>
+
+    </dt>
+    
+    
+  </dl></p>
+
+
+
+          
+
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>
+
+
+<dl>
+  <dt>
+    <dd></dd>
+  </dt>
+</dl>
