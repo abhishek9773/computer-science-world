@@ -18,4 +18,30 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Learn about this things
 - routes
--
+- 
+
+## main Things
+1. StateFull class
+2. SetState Method
+3. Init method
+4. Dispose method.
+
+### life cycle of the app depend of the 3 method mostely
+1. **init method** => this method for when you start first time.
+2. **setState method** => this method use when where do any event when they create again and again buld method .
+3. **despose()** => this mehod use when application is quite and quite this page . 
+
+## lean feature class 
+## learn deeper way of Async and await function => learn from picture.
+
+## what is the different between Async and feature.delayed();
+- Async => Function Start But reaturn some delayed;
+- Future.delayed +>  Functon Start after some delayed.
+
+## learning part 
+- https
+- json formating and decoding 
+- htts api for flutter.
+-how  to secure our passowrd in flutter hwo to hardcodeing in flutter.
+
+- 

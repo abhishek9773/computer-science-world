@@ -19,7 +19,7 @@ class _MyWidgetState extends State<Loading> {
                 Navigator.pushNamed(context, "/home");
               }, 
               icon: Icon(Icons.add_to_home_screen), 
-              label: Text('home page')
+              label: Text('home page'),
             ),
           ],
         ),
