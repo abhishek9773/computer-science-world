@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:wether_app/myData/worker.dart';
+import 'package:wether_app/Activity/home.dart';
 
 class Loading extends StatefulWidget {
   const Loading({super.key});
@@ -8,22 +11,75 @@ class Loading extends StatefulWidget {
 }
 
 class _MyWidgetState extends State<Loading> {
+  String temp = 'null';
+  String hum = 'null';
+  String air_speed = 'null';
+  String des = 'null';
+  String main = 'null';
+
+  void startApp() async {
+    Worker instance = Worker(location: "Mumbai");
+    await instance.getData();
+    temp = instance.temp;
+    hum = instance.humidity;
+    air_speed = instance.air_speed;
+    des = instance.description;
+    main = instance.main;
+
+    Navigator.pushReplacementNamed(context, '/home', arguments: {
+      "temp_value": temp,
+      "hum_value": hum,
+      "air_speed_value": air_speed,
+      "des_value": des,
+      "main_value": main
+    });
+
+    print(instance.air_speed);
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    startApp();
+    print("init sate method of loading file");
+  }
+
+  @override
+  void setState(VoidCallback fn) {
+    startApp();
+    super.setState(fn);
+  }
+
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: <Widget>[
-            TextButton.icon(
-              onPressed: () {
-                Navigator.pushNamed(context, "/home");
-              }, 
-              icon: Icon(Icons.add_to_home_screen), 
-              label: Text('home page'),
+        child: Center(
+          child: Column(
+            children:<Widget>[
+              Image.asset("assets/images/a.png", height: 240, width: 240),
+              const Text("welcom to wether app", style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                ),
+                ),
+              Text ("data is processing...", style: TextStyle( 
+                fontWeight: FontWeight.bold,
+              ),),
+              
+             SpinKitCircle(
+              color: Colors.red[300],
+              size: 50.0,
             ),
-          ],
+
+
+
+            ],
+          ),
+          
         ),
       ),
+      backgroundColor: Colors.green[400],
     );
   }
 }

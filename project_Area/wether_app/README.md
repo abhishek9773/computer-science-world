@@ -42,6 +42,31 @@ samples, guidance on mobile development, and a full API reference.
 - https
 - json formating and decoding 
 - htts api for flutter.
--how  to secure our passowrd in flutter hwo to hardcodeing in flutter.
+- how  to secure our passowrd in flutter hwo to hardcodeing in flutter.
+- learn about .yaml file 
+- json server understanding.
 
+### can i pass integer into uI or only string to UI.?
+ - learn state menagement how to work statefullwigits like => initState(), setState(), desktory() etc.
+ - 
+ - what is the meaning of '?', '!' in dart what is Object class in dart.
+- 
+
+## dependency 
+ - spinner dependency.=> flutter_spinkit
+
+
+--------------------------------------------------------------------
+
+## Home page
+- Search bar.
+- why we are using gester dection.
+- **what is different between webhooks and Api ?**
+- How to use random()
+- how to use GesterDectctor.
+- Linear gradientes.
+- what is greadinents?
+- what is decoration in flutter.
+- what is the status bar and nativation bar?
+- Grideant status war color (package download)
 - 
