@@ -69,4 +69,14 @@ samples, guidance on mobile development, and a full API reference.
 - what is decoration in flutter.
 - what is the status bar and nativation bar?
 - Grideant status war color (package download)
-- 
+-  how to make our app responsive 
+- wether icon package 
+- if you need icon checkout openwether icon map webside for different-defferent type of icone accordintely.
+- what is is cast in flutter and nullalble (?) and null checker (!)  here is example -> 
+```Dart
+    Map? info = ModalRoute.of(context)!.settings.arguments as Map?;
+```
+
+- what is Unnecessary use of string interpolation.
+- where use constrants in side widgets.?
+- what is the ModalRoutes?

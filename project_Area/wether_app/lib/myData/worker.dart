@@ -1,4 +1,3 @@
-
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
@@ -16,6 +15,7 @@ class Worker {
   String air_speed = "null";
   String description = "null";
   String main = "null";
+  String icon = "null";
 
   // creating constractor
   Worker({required this.location}) {
@@ -26,10 +26,12 @@ class Worker {
   Future<void> getData() async {
     try {
       Uri url = Uri.parse(
+
           "https://api.openweathermap.org/data/2.5/weather?q=$location&appid=14ff4a825eea90528bc59b62da9b27cf");
 
       Response response = await get(url);
       Map data = jsonDecode(response.body);
+      // print(data);
 
 // Gettng data all form api.
       double temp_data = data['main'][0]['temp'];
@@ -37,6 +39,10 @@ class Worker {
       double air_speed_data = data['wind']['speed'];
       String description_data = data['wether'][0]['description'];
       String main_data = data['wether'][0]['main'];
+      String icon_data = data['wether'][0]['icon'];
+
+      print(
+          'icon=> $icon_data, \n temp_data +> $temp_data \n humidity_data => $humidity_data \n air_speed_data => $air_speed_data \n descirption_data => $description_data \n main_data => $main_data');
 
       // Assining value
       temp = temp_data.toString();
@@ -44,6 +50,7 @@ class Worker {
       air_speed = air_speed_data.toString();
       description = description_data.toString();
       main = main_data.toString();
+      icon = icon_data.toString();
     } catch (e) {
       temp = "something is wrong try again with temp";
       humidity = "somthing is wrong try again with humidity";

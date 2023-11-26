@@ -11,27 +11,31 @@ class Loading extends StatefulWidget {
 }
 
 class _MyWidgetState extends State<Loading> {
+  String city = "delhi";
   String temp = 'null';
   String hum = 'null';
   String air_speed = 'null';
   String des = 'null';
   String main = 'null';
+  String icon = 'null';
 
   void startApp() async {
-    Worker instance = Worker(location: "Mumbai");
+    Worker instance = Worker(location: city);
     await instance.getData();
     temp = instance.temp;
     hum = instance.humidity;
     air_speed = instance.air_speed;
     des = instance.description;
     main = instance.main;
+    icon = instance.icon;
 
     Navigator.pushReplacementNamed(context, '/home', arguments: {
       "temp_value": temp,
       "hum_value": hum,
       "air_speed_value": air_speed,
       "des_value": des,
-      "main_value": main
+      "icon_value" : icon,
+      "city_value" : city,
     });
 
     print(instance.air_speed);
@@ -56,27 +60,27 @@ class _MyWidgetState extends State<Loading> {
       body: SafeArea(
         child: Center(
           child: Column(
-            children:<Widget>[
+            children: <Widget>[
               Image.asset("assets/images/a.png", height: 240, width: 240),
-              const Text("welcom to wether app", style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
+              const Text(
+                "welcom to wether app",
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
                 ),
+              ),
+              Text(
+                "data is processing...",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
                 ),
-              Text ("data is processing...", style: TextStyle( 
-                fontWeight: FontWeight.bold,
-              ),),
-              
-             SpinKitCircle(
-              color: Colors.red[300],
-              size: 50.0,
-            ),
-
-
-
+              ),
+              SpinKitCircle(
+                color: Colors.red[300],
+                size: 50.0,
+              ),
             ],
           ),
-          
         ),
       ),
       backgroundColor: Colors.green[400],
