@@ -5,6 +5,7 @@ import 'package:mylife/screens/content_page/child1.dart';
 import 'package:mylife/screens/content_page/child_body.dart';
 import 'package:mylife/screens/content_page/young.dart';
 import 'package:mylife/screens/error.dart';
+import 'package:mylife/screens/login.dart';
 
 void main() {
   runApp(
@@ -17,6 +18,7 @@ void main() {
         '/child_boy': (context) => child_boy(),
         '/young': (context) => young(),
         '/error': (context) => Error(),
+        '/login': (context) => login(),
       },
     ),
   );

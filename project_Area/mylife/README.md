@@ -35,3 +35,16 @@ samples, guidance on mobile development, and a full API reference.
   ## LEARNING TOPIC 
 
   -what is the  meaning of async* 
+  - must LEARN THIS PACKAGE 
+    - animation.dart
+    - foundation.dart
+    - gesture.dart
+    - prining.dart
+    - physices.dart
+    - rendering.dart
+    - scheduler.dart
+    - semantics.dart
+    - Services.dart
+    - Widgets.dart
+    ------------------------------------
+- learn about TextFild() Widgets ?

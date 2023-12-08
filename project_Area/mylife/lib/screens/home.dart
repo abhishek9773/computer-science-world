@@ -40,7 +40,8 @@ class _HomeState extends State<Home> {
                     Navigator.pushNamed(context, '/error');
                   },
                   child: Text("go to error page"),
-                )
+                ),
+                
               ],
             ),
           ),
