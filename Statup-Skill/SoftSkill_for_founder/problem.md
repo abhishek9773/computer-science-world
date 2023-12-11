@@ -1,1 +1,2 @@
-as a founder you must know - how to commuunicate.
+as a founder you must know - how to communicate.
+
