@@ -89,4 +89,13 @@ whole day explain:-
 
 - figma design pattern
 - color theory , autolayout (week topic )
-- # react-Native (UI & interaction).
+- ## react-Native (UI & interaction)
+
+# day = 4 (13-12- 2023)
+
+- all are completed(90%)
+- learning react-Native
+- and react
+- make a app prototype of all type of screen.
+
+- let's do in 60 and 30 /10.
