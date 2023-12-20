@@ -94,8 +94,29 @@ whole day explain:-
 # day = 4 (13-12- 2023)
 
 - all are completed(90%)
+
+# day = 5 (14-12-2023)
+
+- english
 - learning react-Native
 - and react
 - make a app prototype of all type of screen.
 
-- let's do in 60 and 30 /10.
+- let's do in 60/30 /10.
+- gitHub update
+
+## tomorrow update
+
+- developement and project.
+- Structure Your Project (Feature Based Project)
+
+# Day = 6 to 8 (19-12-2023)
+
+- where i am
+- How about our gole
+- what are progress.
+  - figma => lot's of brain storming.
+  - developement
+  - English => tell you tomorrow or 5-day later.
+- our future plane
+-
